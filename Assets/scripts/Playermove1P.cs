@@ -1,16 +1,22 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class Playermove1P : MonoBehaviour
+class Playermove1P : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private InputAction _moveAction;
+    [SerializeField] private float _speed = 10f;
+    private Transform _Tr;
+
+    private void Start()
     {
-        
+        _Tr = transform;
+        _moveAction = InputSystem.actions.FindAction("Move");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        Vector2 _moveValue = _moveAction.ReadValue<Vector2>();
+        Vector3 _move = new Vector3(_moveValue.x, 0f, _moveValue.y) * _speed * Time.deltaTime;
+        _Tr.Translate(_move);
     }
 }
