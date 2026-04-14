@@ -15,7 +15,7 @@ public class CameraRotate1P : MonoBehaviour
     private void Start()
     {
         _Tr = transform;
-        _cameraAction = InputSystem.actions.FindAction("CameraMove");
+        _cameraAction = InputSystem.actions.FindAction("CameraMove1P");
         if (_cameraAction == null) Debug.LogError("CameraMoveƒAƒNƒVƒ‡ƒ“‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ");
     }
 

@@ -7,7 +7,7 @@
             "id": "ef8903ea-bcba-4476-8ff4-d819bcdc4314",
             "actions": [
                 {
-                    "name": "Move",
+                    "name": "Move1P",
                     "type": "Value",
                     "id": "8b62ce18-b728-4869-ada0-ba84488ee42e",
                     "expectedControlType": "Vector2",
@@ -16,7 +16,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "CameraMove",
+                    "name": "CameraMove1P",
                     "type": "Value",
                     "id": "3b0196f7-2230-4996-9682-f6395e765adc",
                     "expectedControlType": "Vector2",
@@ -33,7 +33,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Move1P",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -44,7 +44,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Move1P",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -55,7 +55,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Move1P",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -66,7 +66,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Move1P",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -77,7 +77,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Move1P",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -88,7 +88,55 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "CameraMove",
+                    "action": "CameraMove1P",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "2P",
+            "id": "101cc8cb-2ec7-4d22-b3b3-69aca2275a84",
+            "actions": [
+                {
+                    "name": "Move2P",
+                    "type": "Value",
+                    "id": "fe90a32d-997e-403b-8d13-54e06ac21a78",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "CameraMove2P",
+                    "type": "Value",
+                    "id": "46f96e12-40c1-4d3d-bd43-82d4060d2091",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7685c371-69f7-4a77-8027-3ecac61c29d1",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move2P",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e8e3997-ac12-45d6-9fd5-8e910a939f65",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraMove2P",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

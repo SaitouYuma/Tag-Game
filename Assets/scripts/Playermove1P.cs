@@ -10,7 +10,7 @@ class Playermove1P : MonoBehaviour
     private void Start()
     {
         _Tr = transform;
-        _moveAction = InputSystem.actions.FindAction("Move");
+        _moveAction = InputSystem.actions.FindAction("Move1P");
     }
 
     private void Update()
